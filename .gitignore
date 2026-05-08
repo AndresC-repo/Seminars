@@ -2,3 +2,9 @@
 saliency-maps/notebooks/01_saliency_maps_original.ipynb
 saliency-maps/notebooks/.ipynb_checkpoints/*
 permutation-feature-importance/notebooks/.ipynb_checkpoints/*
+
+
+saliency-maps/notebooks/*.png
+saliency-maps/notebooks/*.pt
+saliency-maps/notebooks/*.npz
+saliency-maps/notebooks/data/*
