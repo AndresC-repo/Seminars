@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: permutation-importance-lab
+    ports:
+      - "8889:8888"
+    volumes:
+      # Mount notebooks folder so edits persist on your machine
+      - ./notebooks:/app/notebooks
+    environment:
+      - JUPYTER_ENABLE_LAB=no
+    restart: unless-stopped

@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: saliency-maps-lab
+    ports:
+      - "8890:8890"
+    volumes:
+      # Edits in the container persist on your machine
+      - ./notebooks:/app/notebooks
+    restart: unless-stopped
